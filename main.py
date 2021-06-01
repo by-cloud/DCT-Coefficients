@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import cv2
 
 
-# 读取图片
+# read img
 image = cv2.imread('test.jpeg', 0)
-# 离散余弦变换，并获取其幅频谱
+# DCT
 img_dct = cv2.dct(np.float32(image))
 img_dct_log = np.log(abs(img_dct))
-# 逆离散余弦变换，变换图像至空间域
+# IDCT
 img_back = cv2.idct(img_dct)
 print(type(img_dct))
 
