@@ -42,3 +42,6 @@ plt.savefig('lena_dct.png', dpi=300)
 plt.show()
 
 plt.close()
+
+
+11111111111111111111111111111
